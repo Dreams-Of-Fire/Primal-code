@@ -201,6 +201,31 @@ html {
 em {
     color: #CF5510;  
 }
+
+/* Студенты */
+
+.student-name {
+    display: block;
+    text-align: center;
+}
+
+.student-logo {
+    width: 200px;
+    height: 270px;
+}
+
+.students {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.student {
+    padding-left: 50px;
+}
+
 /* Это стили для подвала. footer */
 
 .footer {
