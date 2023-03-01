@@ -228,6 +228,38 @@ em {
     padding-left: 50px;
 }
 
+/* Здесь стили для страниц "о нас", "контакты" и "о себе" */
+
+.text-info {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.text-adres {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.text-namba {
+    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.video {
+    width: 820px;
+    height: 550px;
+}
+
+.map {
+    max-width: 1250px;
+    width: 100%;
+    height: auto;
+}
+
 /* Это стили для подвала. footer */
 
 .footer {
