@@ -428,4 +428,10 @@ html {
         width: 100%;
         max-width: 300px;
     }
+
+    .video {
+        max-width: 820px;
+        width: 100%;
+        height: auto;
+    }
 }
