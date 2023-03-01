@@ -16,7 +16,9 @@ html {
     background-color: #213B7E;
     display: flex;
     box-sizing: border-box;
-    width: 1300px;
+    max-width: 1300px;
+    width: 100%;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding: 0 15px;
     min-height: 80px;
@@ -29,6 +31,7 @@ html {
 }
 
 .sayt-menu {
+    flex-wrap: wrap;
     display: flex;
     align-self: stretch;
     padding: 0;
@@ -78,7 +81,8 @@ html {
     color: #FFFFFF;
     text-decoration: none;
     background-color: #EA5D21;
-    width: 153px;
+    max-width: 153px;
+    width: 100%;
     min-height: 50px;
     font-family: 'Roboto';
 }
@@ -163,11 +167,27 @@ html {
 .trigger {
     display: block;
 }
+
+.cnopka-close {
+    position: absolute;
+    top: -35px;
+    right: -25px;
+    border: 4px double #EA5D21;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.cnopka-close:hover {
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
 /* Это уже основная часть сайта. Его контент. main */
 
 .main {
     flex-grow: 1;
-    width: 911px;
+    max-width: 911px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -186,7 +206,8 @@ html {
 }
 
 .main-intro {
-    width: 634px;
+    max-width: 634px;
+    width: 100%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -194,12 +215,31 @@ html {
 }
 
 .sayt-img {
-    width: 523px;
-    height: 316px;
+    max-width: 523px;
+    width: 100%;
+    height: auto;
 }
 
-em {
+.orendg {
     color: #CF5510;  
+}
+
+.intro-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.blockquote {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #646464;
+    width: 129px;
+    height: 90px;
 }
 
 /* Студенты */
@@ -228,6 +268,21 @@ em {
     padding-left: 50px;
 }
 
+.new {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 2px 6px 2px;
+    text-transform: uppercase;
+    background: #3AA828;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+    top: -304px;
+    left: 120px;
+}
 /* Здесь стили для страниц "о нас", "контакты" и "о себе" */
 
 .text-info {
@@ -247,6 +302,7 @@ em {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    text-decoration-line: underline;
 }
 
 .video {
@@ -255,18 +311,43 @@ em {
 }
 
 .map {
-    max-width: 1250px;
+    max-width: 1268px;
     width: 100%;
-    height: auto;
+    min-height: 370px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
+.text-me {
+    max-width: 480px;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.di-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.me-logo {
+    max-width: 220px;
+    width: 100%;
+    max-height: 360px;
+    height: auto;
+}
 /* Это стили для подвала. footer */
 
 .footer {
     background-color: #213B7E;
     display: flex;
     box-sizing: border-box;
-    width: 1300px;
+    max-width: 1300px;
+    width: 100%;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding: 0 16px;
     min-height: 60px;
@@ -288,4 +369,55 @@ em {
     font-weight: 400;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width:1000px) {
+
+    .sayt-logo {
+        display: none;
+    }
+
+    .header {
+        justify-content: center;
+        width: 70%;
+    }
+
+    .footer {
+        justify-content: center;
+        width: 70%;
+    }
+
+    .sayt-menu {
+        width: 60%;
+        min-height: 80px;
+    }
+
+    .main {
+        box-sizing: border-box;
+        padding: 0 2vw;
+    }
+
+    .blockquote {
+        margin-left: 50px;
+    }
+
+    .blockquote::after {
+        margin-right: 50px;
+    }
+
+    .cnopka-close {
+        position: absolute;
+        top: -30px;
+        right: 0px;
+    }
+
+    .login-input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .login-password {
+        width: 100%;
+        max-width: 300px;
+    }
 }
