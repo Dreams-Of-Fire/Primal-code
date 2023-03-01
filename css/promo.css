@@ -371,6 +371,14 @@ html {
     color: rgba(255, 255, 255, 0.5);
 }
 
+
+
+@media (max-width:1220px) {
+.students {
+    flex-wrap: wrap;
+}
+}
+
 @media (max-width:1000px) {
 
     .sayt-logo {
